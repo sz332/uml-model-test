@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.acme.verification.confroles.ConflictingRolesPolicyTest" time="0.009" tests="1" errors="1" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.acme.verification.confroles.ConflictingRolesPolicyTest" time="0.806" tests="4" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -7,7 +7,7 @@
     <property name="java.specification.version" value="1.8"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1250"/>
-    <property name="java.class.path" value="C:\Development\GitHub\uml-model-test\target\test-classes;C:\Development\GitHub\uml-model-test\target\classes;C:\Users\aniko\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\aniko\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\aniko\.m2\repository\org\mockito\mockito-core\3.3.3\mockito-core-3.3.3.jar;C:\Users\aniko\.m2\repository\net\bytebuddy\byte-buddy\1.10.5\byte-buddy-1.10.5.jar;C:\Users\aniko\.m2\repository\net\bytebuddy\byte-buddy-agent\1.10.5\byte-buddy-agent-1.10.5.jar;C:\Users\aniko\.m2\repository\org\objenesis\objenesis\2.6\objenesis-2.6.jar;"/>
+    <property name="java.class.path" value="C:\Development\GitHub\uml-model-test\target\test-classes;C:\Development\GitHub\uml-model-test\target\classes;C:\Users\aniko\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\aniko\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\aniko\.m2\repository\org\mockito\mockito-core\3.3.3\mockito-core-3.3.3.jar;C:\Users\aniko\.m2\repository\net\bytebuddy\byte-buddy\1.10.5\byte-buddy-1.10.5.jar;C:\Users\aniko\.m2\repository\net\bytebuddy\byte-buddy-agent\1.10.5\byte-buddy-agent-1.10.5.jar;C:\Users\aniko\.m2\repository\org\objenesis\objenesis\2.6\objenesis-2.6.jar;C:\Users\aniko\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
@@ -18,8 +18,8 @@
     <property name="user.country" value="HU"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_191\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\aniko\AppData\Local\Temp\surefire3568746839666456339\surefirebooter5811972030468380480.jar C:\Users\aniko\AppData\Local\Temp\surefire3568746839666456339 2020-06-26T21-44-26_106-jvmRun1 surefire1022581239741939185tmp surefire_08334511144814052443tmp"/>
-    <property name="surefire.test.class.path" value="C:\Development\GitHub\uml-model-test\target\test-classes;C:\Development\GitHub\uml-model-test\target\classes;C:\Users\aniko\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\aniko\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\aniko\.m2\repository\org\mockito\mockito-core\3.3.3\mockito-core-3.3.3.jar;C:\Users\aniko\.m2\repository\net\bytebuddy\byte-buddy\1.10.5\byte-buddy-1.10.5.jar;C:\Users\aniko\.m2\repository\net\bytebuddy\byte-buddy-agent\1.10.5\byte-buddy-agent-1.10.5.jar;C:\Users\aniko\.m2\repository\org\objenesis\objenesis\2.6\objenesis-2.6.jar;"/>
+    <property name="sun.java.command" value="C:\Users\aniko\AppData\Local\Temp\surefire4494154485644760756\surefirebooter5179779604683726954.jar C:\Users\aniko\AppData\Local\Temp\surefire4494154485644760756 2020-06-26T22-13-16_477-jvmRun1 surefire2302284251659425618tmp surefire_08179514339266893946tmp"/>
+    <property name="surefire.test.class.path" value="C:\Development\GitHub\uml-model-test\target\test-classes;C:\Development\GitHub\uml-model-test\target\classes;C:\Users\aniko\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\aniko\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\aniko\.m2\repository\org\mockito\mockito-core\3.3.3\mockito-core-3.3.3.jar;C:\Users\aniko\.m2\repository\net\bytebuddy\byte-buddy\1.10.5\byte-buddy-1.10.5.jar;C:\Users\aniko\.m2\repository\net\bytebuddy\byte-buddy-agent\1.10.5\byte-buddy-agent-1.10.5.jar;C:\Users\aniko\.m2\repository\org\objenesis\objenesis\2.6\objenesis-2.6.jar;C:\Users\aniko\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\aniko"/>
     <property name="user.language" value="hu"/>
@@ -31,7 +31,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\aniko\AppData\Local\Temp\surefire3568746839666456339\surefirebooter5811972030468380480.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\aniko\AppData\Local\Temp\surefire4494154485644760756\surefirebooter5179779604683726954.jar"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_191\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_191\jre\classes"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -60,9 +60,8 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="testRoles1" classname="com.acme.verification.confroles.ConflictingRolesPolicyTest" time="0.001">
-    <error type="java.lang.NullPointerException">java.lang.NullPointerException
-	at com.acme.verification.confroles.ConflictingRolesPolicyTest.testRoles1(ConflictingRolesPolicyTest.java:50)
-</error>
-  </testcase>
+  <testcase name="testRolelessOperationWithMultipleRoles" classname="com.acme.verification.confroles.ConflictingRolesPolicyTest" time="0.753"/>
+  <testcase name="testSingleMatchingRole" classname="com.acme.verification.confroles.ConflictingRolesPolicyTest" time="0"/>
+  <testcase name="testNoRole" classname="com.acme.verification.confroles.ConflictingRolesPolicyTest" time="0"/>
+  <testcase name="testRolelessOperationWithSingleRole" classname="com.acme.verification.confroles.ConflictingRolesPolicyTest" time="0"/>
 </testsuite>

@@ -8,13 +8,18 @@ import com.acme.model.UMLRole;
 
 public class ConflictingRolesPolicy {
 
-    public List<UMLRole> compare(List<UMLRole> expectedRoles, UMLOperation operation){
-        List<UMLRole> calleeRoles = operation.roles();
+    public static enum GRANT {GRANT_ALL, DENY_ALL};
 
+    public List<UMLRole> compare(List<UMLRole> expectedRoles, UMLOperation operation, GRANT policy){
+        List<UMLRole> operationRoles = operation.roles();
         List<UMLRole> missingRoles = new ArrayList<>();
         
+        if (operationRoles.isEmpty() && policy == GRANT.GRANT_ALL){
+            return missingRoles;
+        }
+
         for (UMLRole expectedRole : expectedRoles){
-            if (!calleeRoles.contains(expectedRole)){
+            if (!operationRoles.contains(expectedRole)){
                 missingRoles.add(expectedRole);
             }
         }
