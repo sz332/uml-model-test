@@ -33,7 +33,7 @@ public class ConflictingRolesVerification {
 
         for (final UMLOperation rootOperation : umlInterface.operations()) {
             walker.walk(rootOperation, (currentOperation, path) -> {
-                List<UMLRole> missingRoles = policy.compare(rootOperation.roles(), currentOperation, ConflictingRolesPolicy.GRANT.GRANT_ALL);
+                List<UMLRole> missingRoles = policy.apply(rootOperation.roles(), currentOperation, ConflictingRolesPolicy.GRANT.GRANT_ALL);
 
                 if (!missingRoles.isEmpty()) {
                     result.addConflict(missingRoles, path);

@@ -1,6 +1,7 @@
 package com.acme.verification.confroles;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 import com.acme.model.UMLOperation;
@@ -10,7 +11,7 @@ public class ConflictingRolesPolicy {
 
     public static enum GRANT {GRANT_ALL, DENY_ALL};
 
-    public List<UMLRole> compare(List<UMLRole> expectedRoles, UMLOperation operation, GRANT policy){
+    public List<UMLRole> apply(List<UMLRole> userRoles, UMLOperation operation, GRANT policy){
         List<UMLRole> operationRoles = operation.roles();
         List<UMLRole> missingRoles = new ArrayList<>();
         
@@ -18,13 +19,25 @@ public class ConflictingRolesPolicy {
             return missingRoles;
         }
 
-        for (UMLRole expectedRole : expectedRoles){
-            if (!operationRoles.contains(expectedRole)){
-                missingRoles.add(expectedRole);
+        if (!operationRoles.isEmpty() && userRoles.isEmpty()){
+            return operationRoles;
+        }
+
+        // if i have a USER role but the operation is protected with ADMIN role then i have a problem
+        // the roles associated to an operation are in OR connection
+
+        boolean success = false;
+
+        for (UMLRole operationRole : operationRoles){
+            if (userRoles.contains(operationRole)){
+                success = true;
+                break;
+            } else {
+                missingRoles.add(operationRole);
             }
         }
 
-        return missingRoles;
+        return success == true ? Collections.emptyList() : missingRoles;
     }
 
     
