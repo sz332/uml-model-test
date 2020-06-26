@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: com.acme.verification.confroles.ConflictingRolesPolicyTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.009 s <<< FAILURE! - in com.acme.verification.confroles.ConflictingRolesPolicyTest
+testRoles1(com.acme.verification.confroles.ConflictingRolesPolicyTest)  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.NullPointerException
+	at com.acme.verification.confroles.ConflictingRolesPolicyTest.testRoles1(ConflictingRolesPolicyTest.java:50)
+

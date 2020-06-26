@@ -1,4 +1,4 @@
-package com.acme.verification.conflictingroles;
+package com.acme.verification.confroles;
 
 import java.util.ArrayList;
 import java.util.List;

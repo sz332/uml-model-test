@@ -1,0 +1,17 @@
+C:\Development\GitHub\uml-model-test\src\main\java\com\acme\model\impl\UMLOperationVisitor.java
+C:\Development\GitHub\uml-model-test\src\main\java\com\acme\model\UMLRole.java
+C:\Development\GitHub\uml-model-test\src\main\java\com\acme\model\UMLActivity.java
+C:\Development\GitHub\uml-model-test\src\main\java\com\acme\App.java
+C:\Development\GitHub\uml-model-test\src\main\java\com\acme\verification\confroles\ConflictingRolesVerificationResult.java
+C:\Development\GitHub\uml-model-test\src\main\java\com\acme\model\impl\UMLRoleImpl.java
+C:\Development\GitHub\uml-model-test\src\main\java\com\acme\model\impl\UMLVisitor.java
+C:\Development\GitHub\uml-model-test\src\main\java\com\acme\model\UMLOperation.java
+C:\Development\GitHub\uml-model-test\src\main\java\com\acme\verification\confroles\ConflictingRolesPolicy.java
+C:\Development\GitHub\uml-model-test\src\main\java\com\acme\model\impl\GetActivitiesByInterface.java
+C:\Development\GitHub\uml-model-test\src\main\java\com\acme\model\impl\UMLOperationWalker.java
+C:\Development\GitHub\uml-model-test\src\main\java\com\acme\model\impl\GetRolesByInterface.java
+C:\Development\GitHub\uml-model-test\src\main\java\com\acme\model\UMLModel.java
+C:\Development\GitHub\uml-model-test\src\main\java\com\acme\verification\confroles\ConflictingRolesVerification.java
+C:\Development\GitHub\uml-model-test\src\main\java\com\acme\model\UMLInterface.java
+C:\Development\GitHub\uml-model-test\src\main\java\com\acme\model\impl\UMLInterfaceWalker.java
+C:\Development\GitHub\uml-model-test\src\main\java\com\acme\model\UMLBase.java

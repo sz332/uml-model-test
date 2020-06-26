@@ -7,14 +7,13 @@ import java.util.stream.Collectors;
 
 import com.acme.model.UMLActivity;
 import com.acme.model.UMLInterface;
-import com.acme.model.UMLOperation;
 
 public class GetActivitiesByInterface {
 
     public List<UMLActivity> execute(final UMLInterface umlInterface) {
         final Map<String, UMLActivity> activities = new HashMap<>();
 
-        final UMLInterfaceWalker walker = new UMLInterfaceWalker(umlInterface);
+        //final UMLInterfaceWalker walker = new UMLInterfaceWalker(umlInterface);
 
         // walker.walk(new UMLVisitor() {
 

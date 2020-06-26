@@ -16,24 +16,22 @@ public class GetRolesByInterface {
 
         final UMLOperationWalker walker = new UMLOperationWalker();
 
-        for (UMLOperation operation : umlInterface.operations()){
+        for (UMLOperation operation : umlInterface.operations()) {
 
-        walker.walk(operation, new UMLOperationVisitor() {
+            walker.walk(operation, new UMLOperationVisitor() {
 
-            @Override
-            public void visit(final UMLOperation operation, List<UMLOperation> path) {
-                for (UMLRole role : operation.roles()){
-                    roles.put(role.name(), role);
+                @Override
+                public void visit(final UMLOperation operation, List<UMLOperation> path) {
+                    for (UMLRole role : operation.roles()) {
+                        roles.put(role.name(), role);
+                    }
                 }
-            }
 
-        });
+            });
 
-    }
+        }
 
         return roles.values().stream().collect(Collectors.toList());
     }
-
-
 
 }
