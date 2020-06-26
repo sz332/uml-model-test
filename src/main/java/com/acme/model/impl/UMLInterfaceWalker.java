@@ -11,7 +11,7 @@ public class UMLInterfaceWalker {
         this.umlInterface = umlInterface;
     }
 
-    public void walk(UMLVisitor visitor) {
+    public void walk(UMLOperationVisitor visitor) {
         UMLOperationWalker operationWalker = new UMLOperationWalker();
 
         for (UMLOperation operation : umlInterface.operations()) {

@@ -16,17 +16,17 @@ public class GetActivitiesByInterface {
 
         final UMLInterfaceWalker walker = new UMLInterfaceWalker(umlInterface);
 
-        walker.walk(new UMLInterfaceVisitor() {
+        // walker.walk(new UMLVisitor() {
 
-            @Override
-            public void visit(final UMLOperation operation) {
-            }
+        //     @Override
+        //     public void visit(final UMLOperation operation) {
+        //     }
 
-            @Override
-            public void visit(final UMLActivity activity) {
-                activities.put(activity.id(), activity);
-            }
-        });
+        //     @Override
+        //     public void visit(final UMLActivity activity) {
+        //         activities.put(activity.id(), activity);
+        //     }
+        // });
 
         return activities.values().stream().collect(Collectors.toList());
     }
