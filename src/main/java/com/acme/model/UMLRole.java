@@ -1,7 +1,6 @@
 package com.acme.model;
 
-public interface UMLRole {
+public interface UMLRole extends UMLBase {
 
-    String name();
     
 }

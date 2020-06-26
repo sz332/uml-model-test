@@ -2,10 +2,7 @@ package com.acme.model;
 
 import java.util.List;
 
-public interface UMLInterface {
-
-    String id();
-    String name();
+public interface UMLInterface  extends UMLBase {
 
     List<UMLOperation> operations();
     

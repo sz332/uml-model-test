@@ -2,12 +2,9 @@ package com.acme.model;
 
 import java.util.List;
 
-public interface UMLActivity {
+public interface UMLActivity extends UMLBase {
 
-    String id();
-    String name();
-
-    UMLOperation associatedOperation();
+    UMLOperation assignedOperation();
     List<UMLActivity> calledActivities();
     
 }

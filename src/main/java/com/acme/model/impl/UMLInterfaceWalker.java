@@ -1,6 +1,5 @@
 package com.acme.model.impl;
 
-import com.acme.model.UMLActivity;
 import com.acme.model.UMLInterface;
 import com.acme.model.UMLOperation;
 
@@ -12,24 +11,11 @@ public class UMLInterfaceWalker {
         this.umlInterface = umlInterface;
     }
 
-    public void walk(UMLInterfaceVisitor visitor) {
+    public void walk(UMLVisitor visitor) {
+        UMLOperationWalker operationWalker = new UMLOperationWalker();
+
         for (UMLOperation operation : umlInterface.operations()) {
-            walk(operation, visitor);
-        }
-    }
-
-    private void walk(UMLOperation operation, UMLInterfaceVisitor visitor) {
-        visitor.visit(operation);
-
-        if (operation.associatedActivity().isPresent()) {
-
-            UMLActivity activity = operation.associatedActivity().get();
-
-            visitor.visit(activity);
-
-            for (UMLActivity calledActivity : activity.calledActivities()) {
-                walk(calledActivity.associatedOperation(), visitor);
-            }
+            operationWalker.walk(operation, visitor);
         }
     }
 
